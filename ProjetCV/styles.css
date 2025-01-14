@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #999985;
+    background-color: #12364e;
     color: #ffffff;
 }
 
@@ -207,4 +207,8 @@ footer {
 
 .item p:hover {
     text-decoration: underline; /* Survol interactif */
+}
+.Mes projets Git{
+    display: none;
+    cursor: pointer;
 }
