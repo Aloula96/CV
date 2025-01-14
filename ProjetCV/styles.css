@@ -128,8 +128,10 @@ body {
     transition: transform 0.3s ease;
 }
 
-.contact p:hover {
-    transform: scale(1.1);
+.Thèse2 p {
+    cursor: pointer;
+    color:white;
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -192,23 +194,31 @@ footer {
 }
 .arrow {
     display: inline-block;
-    transform: rotate(-90deg); /* Orientation par défaut */
-    transition: transform 0.3s ease; /* Animation fluide */
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .arrow.active {
-    transform: rotate(0deg); /* Orientation après clic */
+    transform: rotate(0deg); 
 }
 .item p {
-    cursor: pointer; /* Curseur en mode clic */
-    color: #f39c12; /* Couleur pour attirer l'attention */
+    cursor: pointer; 
+    color: #f39c12; 
     font-weight: bold;
 }
-
+/* 
 .item p:hover {
-    text-decoration: underline; /* Survol interactif */
-}
+    text-decoration: underline; Survol interactif
+} */
 .Mes projets Git{
     display: none;
     cursor: pointer;
+    color: #f39c12;
+    
+}
+.Mes projets Git p {
+    display: none;
+    color: white;
+    text-align: center;
 }
