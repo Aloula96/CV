@@ -17,3 +17,10 @@ these.addEventListener('click', function () {
     arrowThese.classList.toggle('active');
     hiddenThese.classList.toggle('displayNone');
 });
+document.querySelectorAll('.arrow').forEach(arrow => {
+    arrow.addEventListener('click', () => {
+        const content = arrow.nextElementSibling;
+        content.classList.toggle('displayNone');
+        arrow.classList.toggle('active');
+    });
+});

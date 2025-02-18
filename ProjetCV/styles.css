@@ -1,10 +1,9 @@
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #12364e;
-    color: #ffffff;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .cv-container {
@@ -14,10 +13,20 @@ body {
         "left-column right-column";
     max-width: 1000px;
     margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    background-color: #222;
+    background-color: #ffffff;
+}
+
+.left-column {
+    grid-area: left-column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: #eaeaea;
+    padding: 20px;
+    gap: 20px;
 }
 
 .left-column .profile-picture img {
@@ -26,100 +35,73 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 4px solid #fff;
+    border: 4px solid #ddd;
     transition: transform 0.2s ease;
 }
 
-.left-column {
-    grid-area: left-column;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    background-color: #222;
-    padding: 20px;
-    gap: 20px;
-}
 .left-column .profile-picture:hover img {
     transform: scale(1.1);
 }
 
-
 .left-column h2 {
-    color: #f39c12; 
+    color: #0056b3;
     text-align: center;
 }
 
 .left-column p, .left-column a {
-    color: #cccccc;
+    color: #555;
     text-align: center;
 }
+
 .left-column a {
     text-decoration: none;
-    color: #f39c12;
+    color: #0056b3;
 }
 
 .left-column a:hover {
     text-decoration: underline;
 }
+
 .right-column {
     grid-area: right-column;
     padding: 30px;
 }
 
 .right-column h1, h2 {
-    color: #3498db;
+    color: #0056b3;
 }
 
 .right-column section h2 {
     margin-bottom: 25px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #0056b3;
 }
+
 .timeline {
     position: relative;
     padding-left: 40px;
-    border-left: 2px solid #3498db;
+    border-left: 2px solid #0056b3;
 }
 
 .timeline .item {
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 8px;
-    background-color: rgba(52, 152, 219, 0.1);
+    background-color: rgba(0, 86, 179, 0.1);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .timeline .item:hover {
     transform: translateX(10px);
-    background-color: rgba(52, 152, 219, 0.2);
+    background-color: rgba(0, 86, 179, 0.2);
 }
 
 .timeline .item span {
     font-size: 14px;
-    color: #f39c12;
+    color: #ff9800;
     font-weight: bold;
 }
 
-
-
-
-
-.content {
-    padding: 30px;
-}
-
-
-/* Skills Section */
-#skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-#skills ul p {
-    margin-bottom: 10px;
-}
-
-/* Contact Section */
 .contact p {
     display: flex;
     align-items: center;
@@ -128,21 +110,13 @@ body {
     transition: transform 0.3s ease;
 }
 
-.Thèse2 p {
-    cursor: pointer;
-    color:white;
-    text-decoration: underline;
-}
-
-/* Footer */
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #222;
-    color: #cccccc;
+    background-color: #eaeaea;
+    color: #333;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .cv-container {
         grid-template-columns: 1fr;
@@ -159,11 +133,6 @@ footer {
     .right-column {
         padding: 20px;
     }
-
-    .timeline {
-        padding-left: 20px;
-        border-left: 2px solid #3498db;
-    }
 }
 
 @media (max-width: 480px) {
@@ -176,49 +145,4 @@ footer {
         width: 100px;
         height: 100px;
     }
-
-    .right-column h1 {
-        font-size: 20px;
-    }
-
-    .right-column h2 {
-        font-size: 18px;
-    }
-
-    .timeline .item span {
-        font-size: 12px;
-    }
-}
-.displayNone {
-    display: none;
-}
-.arrow {
-    display: inline-block;
-    transform: rotate(-90deg);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.arrow.active {
-    transform: rotate(0deg); 
-}
-.item p {
-    cursor: pointer; 
-    color: #f39c12; 
-    font-weight: bold;
-}
-/* 
-.item p:hover {
-    text-decoration: underline; Survol interactif
-} */
-.Mes projets Git{
-    display: none;
-    cursor: pointer;
-    color: #f39c12;
-    
-}
-.Mes projets Git p {
-    display: none;
-    color: white;
-    text-align: center;
 }
